@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nopalz - About</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-bg"></div>
+  <div class="wrap">
+    <div id="site-nav"></div>
+
+    <main>
+      <h1 class="pageTitle">About Me</h1>
+      <p class="lead">
+        I&apos;m a CS student who likes building real stuff and learning by doing.
+        I&apos;m focusing on fundamentals + projects that I can explain clearly.
+      </p>
+
+      <div class="aboutCenter">
+        <div class="portraitFloat">
+          <div class="portraitCard" data-card3d>
+            <img class="portraitImg" src="assets/mypic.png" alt="Portrait" />
+          </div>
+        </div>
+
+        <!-- Resume button UNDER the picture -->
+        <div style="margin-top:24px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+          <a class="btn primary iconBtn" href="assets/resume.pdf" target="_blank" rel="noreferrer" aria-label="View resume">
+            <i class='bx bx-show'></i>
+            View Resume
+          </a>
+          <a class="btn iconBtn" href="assets/resume.pdf" download aria-label="Download resume">
+            <i class='bx bx-download'></i>
+            Download Resume
+          </a>
+        </div>
+
+        <div class="meta" style="margin-top:24px;">Based in Tawau, Sabah • Open to internships</div>
+      </div>
+
+      <div class="grid" style="margin-top:28px;">
+        <div class="card">
+          <h3 class="projTitle">What I’m into</h3>
+          <p class="meta">Backend • security fundamentals • automation • clean UI</p>
+        </div>
+        <div class="card">
+          <h3 class="projTitle">Currently learning</h3>
+          <p class="meta">Networking • Linux • secure coding • interview prep (DSA)</p>
+        </div>
+        <div class="card">
+          <h3 class="projTitle">What I’m looking for</h3>
+          <p class="meta">Internships • mentorship • collabs • open-source</p>
+        </div>
+      </div>
+
+      <div class="aboutCardsRow" style="margin-top:28px;">
+        <div class="card skillIconsCard" data-card3d>
+          <div class="skillIconsGrid">
+            <div class="skillIcon"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+            <div class="skillIcon"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+            <div class="skillIcon"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="skillIcon"><i class="devicon-flutter-plain colored"></i><span>Flutter</span></div>
+            <div class="skillIcon"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+            <div class="skillIcon"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+            <div class="skillIcon"><i class="devicon-kalilinux-plain colored"></i><span>Kali Linux</span></div>
+            <div class="skillIcon"><i class='bx bx-broadcast' style="color:#1679b5;"></i><span>Wireshark</span></div>
+            <div class="skillIcon"><i class='bx bx-server' style="color:#607078;"></i><span>VMware</span></div>
+          </div>
+        </div>
+
+        <div class="card langCardWrap">
+        <h3 class="projTitle" style="margin-bottom:16px;">Languages</h3>
+        <div class="langGrid">
+          <div class="langCard">
+            <svg class="langRing" viewBox="0 0 100 100">
+              <circle class="langRing-bg" cx="50" cy="50" r="40"/>
+              <circle class="langRing-fill" cx="50" cy="50" r="40" style="stroke-dasharray: 251.2; stroke-dashoffset: 0;"/>
+            </svg>
+            <div class="langInfo">
+              <span class="langPct">100%</span>
+              <span class="langName">Malay</span>
+            </div>
+          </div>
+
+          <div class="langCard">
+            <svg class="langRing" viewBox="0 0 100 100">
+              <circle class="langRing-bg" cx="50" cy="50" r="40"/>
+              <circle class="langRing-fill" cx="50" cy="50" r="40" style="stroke-dasharray: 251.2; stroke-dashoffset: 100.48;"/>
+            </svg>
+            <div class="langInfo">
+              <span class="langPct">60%</span>
+              <span class="langName">English</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

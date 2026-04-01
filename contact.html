@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nopalz - Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="site-bg"></div>
+  <div class="wrap">
+    <div id="site-nav"></div>
+
+    <main>
+      <h1 class="pageTitle">Contact</h1>
+      <p class="lead">Best way to reach me is email + socials.</p>
+
+      <div class="links" style="margin-bottom:24px;">
+        <a class="socialBtn" href="#YourGithubURL" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a class="socialBtn" href="#YourLinkedInURL" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+      </div>
+
+      <div class="contactGrid">
+        <div class="card">
+          <h3 class="projTitle">Quick Message</h3>
+          <p class="meta">via WhatsApp <i class='bx bxl-whatsapp'></i> | +60 12-345 6789</p>
+          <form class="form" style="margin-top:12px;" onsubmit="sendWhatsApp(event, this)">
+            <input class="input" placeholder="Your Name" required />
+            <input class="input" type="email" placeholder="Your Email" required />
+            <textarea class="input" placeholder="Message" required></textarea>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+        <!-- put your phone number in main.js L169 -->
+
+        <div class="card">
+          <h3 class="projTitle">Email</h3>
+          <p class="meta">youremail@gmail.com</p>
+          <form class="form" style="margin-top:12px;" onsubmit="sendEmail(event, this)">
+            <input class="input" placeholder="Your Name" required />
+            <input class="input" placeholder="Subject" required />
+            <textarea class="input" placeholder="Message" required></textarea>
+            <button class="btn primary" type="submit">Send Email</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- put your email in main.js L178 -->
+
+    <div id="site-footer"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

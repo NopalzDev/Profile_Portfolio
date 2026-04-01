@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--tab icon logo-->
+  <link rel="shortcut icon" href="assets/mylogo.png">
+  <title>(Your Name)'s Portfolio</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="home">
+  
+  <div id="site-bg"></div>
+
+  <div class="wrap">
+    <div id="site-nav"></div>
+
+    <div class="heroGroup">
+      <div class="digitalClock">
+        <div class="clock-time">
+          <span id="clock-h"></span>
+          <span class="clock-sep">:</span>
+          <span id="clock-m"></span>
+          <span class="clock-sep">:</span>
+          <span id="clock-s"></span>
+          <span id="clock-ampm" class="clock-ampm"></span>
+        </div>
+        <div id="clock-date" class="clock-date"></div>
+      </div>
+
+      <main class="hero heroSolo">
+        <div>
+          <div class="hello">Hi, I&apos;m (Your Name) — computer science student</div>
+          <h1 class="big" data-tilt data-tilt-zoom="1.08">(Your Name)'s</h1>
+          <div class="outline" data-tilt data-tilt-zoom="1.08">Portfolio</div>
+          <p class="sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Facere, itaque sunt consectetur doloremque adipisci maiores at eligendi quae facilis. 
+            Esse illum officia magnam delectus rerum cumque voluptatum voluptate laudantium dicta?
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <!-- custom js -->
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const pad = n => String(n).padStart(2, '0');
+      const days   = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+      function tick() {
+        const now  = new Date();
+        let   h    = now.getHours();
+        const ampm = h >= 12 ? 'PM' : 'AM';
+        h = h % 12 || 12;
+
+        document.getElementById('clock-h').textContent    = pad(h);
+        document.getElementById('clock-m').textContent    = pad(now.getMinutes());
+        document.getElementById('clock-s').textContent    = pad(now.getSeconds());
+        document.getElementById('clock-ampm').textContent = ampm;
+        document.getElementById('clock-date').textContent =
+          days[now.getDay()] + ', ' + months[now.getMonth()] + ' ' + now.getDate() + ' ' + now.getFullYear();
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
+</body>
+</html>

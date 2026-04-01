@@ -1,0 +1,31 @@
+<!-- components/nav.html -->
+<nav>
+  <div class="navlinks navlinks-left">
+    <a data-nav href="index.html"><i class='bx bx-home-alt'></i> Home</a>
+    <a data-nav href="about.html"><i class='bx bx-user'></i> About</a>
+  </div>
+
+  <a class="logo" href="index.html">Your<span style="color:var(--mint)">Name</span>z.</a>
+
+  <div class="navlinks navlinks-right">
+    <a data-nav href="projects.html"><i class='bx bx-code-alt'></i> Projects</a>
+    <a data-nav href="contact.html"><i class='bx bx-phone'></i> Contact</a>
+  </div>
+
+  <button class="navTheme" aria-label="Toggle dark mode" onclick="
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+    this.querySelector('i').className = isDark ? 'bx bx-moon' : 'bx bx-sun';
+  ">
+    <i class='bx bx-moon'></i>
+  </button>
+
+  <button class="navBurger" aria-label="Toggle menu" onclick="
+    const nav = this.closest('nav');
+    nav.classList.toggle('open');
+    this.querySelector('i').className = nav.classList.contains('open') ? 'bx bx-x' : 'bx bx-menu';
+  ">
+    <i class='bx bx-menu'></i>
+  </button>
+</nav>
