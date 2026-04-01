@@ -6,4 +6,5 @@ Web Portfolio just using HTML, CSS and JavaScript
 
 ## 🌐 Live Demo
 
+(Click this Image)
 [![Portfolio Preview](./assets/preview.png)](https://nopalzdev.github.io/Profile_Portfolio/)
