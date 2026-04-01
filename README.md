@@ -2,6 +2,7 @@
 Web Portfolio just using HTML, CSS and JavaScript
 
 - Tilt and Vanilla Tilt effect
+- Parallax Background
 - Dark Mode
 
 ## 🌐 Live Demo
