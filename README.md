@@ -1,6 +1,7 @@
 # Profile_Portfolio
 Web Portfolio just using HTML, CSS and JavaScript
 
+Modern Portfolio
 - Tilt and Vanilla Tilt effect
 - Parallax Background
 - Digital Clock and Date
