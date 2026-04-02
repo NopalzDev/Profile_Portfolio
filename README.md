@@ -6,6 +6,7 @@ Modern Portfolio
 - Parallax Background
 - Digital Clock and Date
 - Dark Mode
+- Mobile Responsive
 
 ## 🌐 Live Demo
 
